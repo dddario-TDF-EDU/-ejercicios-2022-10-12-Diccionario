@@ -1,0 +1,23 @@
+[
+  {
+    "name": "asiduamente",
+    "definition": "que asiste a un lugar o realiza cierta actividad con frecuencia",
+    "gramFunction": "adjetivo",
+    "synonymous": "frecuentemente,constantemente,continuamente,habitualmente,siempre,religiosamente,generalmente,normalmente,regularmente",
+    "antonyms": "infrecuente,desafecto,impuntual,discontinuo"
+  },
+  {
+    "name": "rojo",
+    "definition": "del color de la sangre o del tomate maduro,\"primer color del espectro solar, anterior al naranja, correspondiente a las radiaciones de mayor longitud de onda del espectro visible\",\"que es partidario de tendencias políticas revolucionarias o de izquierdas, aplicado, en especial, a los partidarios de la república durante la guerra civil española y en la posguerra",
+    "gramFunction": "adjetivo,sustantivo",
+    "synonymous": "encarnado,escarlata,bermejo,colorado,granate,grana,rubí,carmesí,bermellón,corinto",
+    "antonyms": "ceniciento,lívido,espeluznante,pálido,pastoso,pico,cetrino,pálido"
+  },
+  {
+    "name": "cerrar",
+    "definition": "encajar en su marco la hoja de una puerta o ventana,\"usar un dispositivo para que una cosa quede incomunicada con el exterior, o bien para impedir la circulación o salida de un fluido\",\"asegurar una puerta, ventana o tapa con llave",
+    "gramFunction": "verbo",
+    "synonymous": "atrancar,tapiar,vallar,tabicar,cercar,obstruir,obturar,ocluir,sellar,lacrar,cegar,tapar",
+    "antonyms": "abrir,destapar,destaponar,extender"
+  }
+]
