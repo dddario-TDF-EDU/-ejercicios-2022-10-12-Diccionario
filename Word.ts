@@ -1,11 +1,11 @@
 export class Word {
     private name: string;
     private definition: string[];
-    private gramFunction: string;
+    private gramFunction: string[];
     private synonymous: string[];
     private antonyms: string[];
 
-    public constructor(paramName: string, paramDefinition: string[], paramGramFunction: string, paramSynonymous: string[], paramAntonyms: string[]) {
+    public constructor(paramName: string, paramDefinition: string[], paramGramFunction: string[], paramSynonymous: string[], paramAntonyms: string[]) {
         this.name = paramName;
         this.definition = paramDefinition;
         this.gramFunction = paramGramFunction;
@@ -43,11 +43,11 @@ export class Word {
         return this.antonyms;
     }
 
-    public setGramFunction(paramGramFunction: string): void {
-        this.gramFunction = paramGramFunction;
+    public addGramFunction(paramGramFunction: string): void {
+        this.gramFunction.push(paramGramFunction);
     }
 
-    public getGramFunction(): string {
+    public getGramFunction(): string[] {
         return this.gramFunction;
     }
 
