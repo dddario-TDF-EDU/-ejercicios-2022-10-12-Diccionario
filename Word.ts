@@ -42,6 +42,15 @@ export class Word {
     public getAntonyms(): string[] {
         return this.antonyms;
     }
+
+    public setGramFunction(paramGramFunction: string): void {
+        this.gramFunction = paramGramFunction;
+    }
+
+    public getGramFunction(): string {
+        return this.gramFunction;
+    }
+
 }
 
 //problema de entrada y salida de arrays vacios al crear el objeto, como resolverlo?
