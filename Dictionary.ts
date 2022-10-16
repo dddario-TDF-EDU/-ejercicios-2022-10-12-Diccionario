@@ -29,18 +29,12 @@ export class Dictionary {
             menor = limit1;
             mayor = limit2;
         }
-
-        //calculamos valor absoluto, la distancia entre 2 puntos
-        let distance: number = Math.abs (limit1 - limit2);
         //tomamos el resultado y lo utilizamos para crear el array de salida
         let arrayBetween: Word[] = [];
-
-        for(let i = menor; i < mayor ; i++) {
+        for(let i = menor+1; i < mayor ; i++) {
             arrayBetween.push(this.words[i]);
         }
-
         return arrayBetween;
-
     }
 
     public searchWord(paramName: string): Word {
@@ -62,5 +56,25 @@ export class Dictionary {
 
         throw new Error ("No se encontro la palabra");
     }
+    
+    public ordenar(): void {
+        for (let j = 0; j < this.words.length-1; j++) {
+            if (this.words[j].getName().toUpperCase() > this.words[j + 1].getName().toUpperCase()) {
+                let aux = this.words[j+1]
+                this.words[j+1] = this.words[j]
+                this.words[j] = aux;
+                
+            }
+        }
+    }
 
+    public getWords(): string[] {
+        let palabrasContenidas: string[] = [];
+        let nuevaPalabra: string = "";
+        for (let j = 0; j < this.words.length; j++) {
+            nuevaPalabra = this.words[j].getName();
+            palabrasContenidas.push(nuevaPalabra);
+        }
+        return palabrasContenidas;
+    }
 }
