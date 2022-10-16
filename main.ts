@@ -11,3 +11,13 @@ let palabraNueva: Word = new Word("perro",["mamífero doméstico de la familia d
 
 //programa principal
 let miDiccionario: Dictionary = new Dictionary(misPalabras);
+
+console.log(miDiccionario.searchWord("perro"));
+miDiccionario.addWord(palabraNueva);
+console.log(miDiccionario.searchWord("perro"));
+console.log(miDiccionario.getWords());
+miDiccionario.ordenar();
+console.log(miDiccionario.getWords());
+console.log(miDiccionario.betweenWords("rojo","cerrar"));
+console.log(misPalabras[2].getSynonymous());
+
