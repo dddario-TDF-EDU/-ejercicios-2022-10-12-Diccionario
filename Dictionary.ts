@@ -38,13 +38,14 @@ export class Dictionary {
     }
 
     public searchWord(paramName: string): Word {
+        let palabraEncontrada: Word = new Word("",[""],[""],[""],[""]);
         for(let i = 0; i < this.words.length ; i++) {
             if(paramName.toUpperCase() === this.words[i].getName().toUpperCase()) {
-                return this.words[i];
+                palabraEncontrada = this.words[i]; 
+                return palabraEncontrada;
             }
         }
-
-        throw new Error ("No se encontro la palabra");
+        return palabraEncontrada;
     }
 
     private returnIndex(paramName: string): number {
@@ -53,7 +54,7 @@ export class Dictionary {
                 return i;
             }
         }
-
+        //Falta encontrar la forma en que una palabra no exista y poder reconocerla
         throw new Error ("No se encontro la palabra");
     }
     
