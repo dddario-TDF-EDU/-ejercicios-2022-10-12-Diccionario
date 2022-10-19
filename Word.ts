@@ -28,6 +28,7 @@ export class Word {
     public getDef(): string[] {
         return this.definition;
     }
+    
     public addSynonymous(paramSynonymous: string): void {
         this.synonymous.push(paramSynonymous); 
     }
